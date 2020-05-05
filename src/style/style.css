@@ -1,0 +1,33 @@
+#body {
+    background-image: url("../images/BackgroundImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color: rgba(255,255,255,0.3);
+    background-blend-mode: lighten;
+}
+
+h1, p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#details {
+    text-align: center;
+    display: block;
+    padding-top: 400px;
+    color: black;
+    line-height: 20px;
+}
+
+#profilepic {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #7171b7;
+}
