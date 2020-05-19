@@ -1,0 +1,330 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../images/BackgroundImage.jpg");
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 3px -2px rgb(176, 38, 116);
+    z-index: 5;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:link {
+    color: rgb(0, 0, 0);
+}
+
+li a:visited {
+    color: rgb(0, 0, 0);
+}
+
+li a:hover {
+    color: rgba(176, 38, 116);
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 70px);
+    top: 70px;
+  }
+
+#profilepic {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 3px rgba(176, 38, 116, 0.6);
+    border-width: 5px;
+}
+
+.details {
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+}
+
+.icons {
+    flex-direction: row-reverse;
+    margin-top: 10px;
+}
+
+.fa-linkedin,
+.fa-github {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-decoration: none;
+    color: rgb(176, 38, 116);
+}
+
+
+
+
+
+@media screen and (max-width: 320px) {
+
+    .body {
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar {
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        height: 60px;
+    }
+
+    .main-content {
+        padding: 20px;
+        align-items: center;
+    }
+
+    #profilepic {
+        height: 250px;
+        width: 250px;
+    }
+
+    .details, h1 {
+        font-size: 1.7em;
+        margin-top: 10px;
+    }
+
+    .fa-linkedin,
+    .fa-github {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+        margin: 10px;
+    }
+    
+    li, a {
+        font-size: 1.2em;
+        padding: 15px 5px;
+    }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+
+    .body {
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar {
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        height: 60px;
+    }
+
+    .main-content {
+        padding: 20px;
+        align-items: center;
+    }
+
+    #profilepic {
+        height: 250px;
+        width: 250px;
+    }
+
+    .details, h1 {
+        font-size: 1.7em;
+        margin-top: 10px;
+    }
+
+    .fa-linkedin,
+    .fa-github {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+        margin: 10px;
+    }
+    
+    li, a {
+        font-size: 1.2em;
+        padding: 15px 5px;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .body {
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar {
+        align-items: flex-start;
+        align-self: flex-start;
+        justify-content: flex-start;
+        height: 60px;
+    }
+
+    .main-content {
+        padding: 20px;
+        align-items: center;
+    }
+
+    #profilepic {
+        height: 250px;
+        width: 250px;
+    }
+
+    .details, h1 {
+        font-size: 1.7em;
+        margin-top: 10px;
+    }
+
+    .fa-linkedin,
+    .fa-github {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+        margin: 10px;
+    }
+    
+    li, a {
+        font-size: 1.2em;
+        padding: 15px 5px;
+        margin-left: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    .body {
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar {
+        align-items: flex-start;
+        align-self: flex-start;
+        justify-content: flex-start;
+        height: 60px;
+    }
+
+    .main-content {
+        padding: 20px;
+        align-items: center;
+    }
+
+    #profilepic {
+        height: 270px;
+        width: 270px;
+    }
+
+    .details, h1 {
+        font-size: 1.9em;
+        margin-top: 10px;
+    }
+
+    .fa-linkedin,
+    .fa-github {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+        margin: 10px;
+    }
+    
+    li, a {
+        font-size: 1.2em;
+        padding: 15px 5px;
+        margin-left: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 1201px) {
+
+    .body {
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar {
+        align-items: flex-start;
+        align-self: flex-start;
+        justify-content: flex-start;
+        height: 60px;
+    }
+
+    .main-content {
+        padding: 20px;
+        align-items: center;
+    }
+
+    #profilepic {
+        height: 300px;
+        width: 300px;
+    }
+
+    .details, h1 {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+
+    .fa-linkedin,
+    .fa-github {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+        margin: 10px;
+    }
+    
+    li, a {
+        font-size: 1.2em;
+        padding: 15px 5px;
+        margin-left: 10px;
+    }
+}
