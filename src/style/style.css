@@ -1,3 +1,5 @@
+/*For All Pages*/
+
 * {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -62,6 +64,9 @@ li a:hover {
     top: 70px;
   }
 
+
+/*For The Home Page*/
+
 #profilepic {
     border-radius: 50%;
     border-style: solid;
@@ -89,8 +94,14 @@ li a:hover {
 }
 
 
+/*For The "About Me" Page*/
 
 
+
+
+
+
+/*Media Queries For Responsive Design*/
 
 @media screen and (max-width: 320px) {
 
