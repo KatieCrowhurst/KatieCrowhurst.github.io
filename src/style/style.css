@@ -95,7 +95,46 @@ li a:hover {
 @media screen and (max-width: 320px) {
 
     .body {
-        background-color: lightblue;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar {
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        height: 60px;
+    }
+
+    .main-content {
+        padding: 20px;
+        align-items: center;
+    }
+
+    #profilepic {
+        height: 250px;
+        width: 250px;
+    }
+
+    .details, h1 {
+        font-size: 1.7em;
+        margin-top: 10px;
+    }
+
+    .fa-linkedin,
+    .fa-github {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+        margin: 10px;
+    }
+    
+    li, a {
+        font-size: 1.2em;
+        padding: 15px 5px;
     }
 
 }
@@ -103,7 +142,46 @@ li a:hover {
 @media screen and (min-width: 321px) and (max-width: 768px) {
 
     .body {
-        background-color: lightblue;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar {
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        height: 60px;
+    }
+
+    .main-content {
+        padding: 20px;
+        align-items: center;
+    }
+
+    #profilepic {
+        height: 250px;
+        width: 250px;
+    }
+
+    .details, h1 {
+        font-size: 1.7em;
+        margin-top: 10px;
+    }
+
+    .fa-linkedin,
+    .fa-github {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+        margin: 10px;
+    }
+    
+    li, a {
+        font-size: 1.2em;
+        padding: 15px 5px;
     }
     
 }
@@ -111,7 +189,47 @@ li a:hover {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
     .body {
-        background-color: yellow;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar {
+        align-items: flex-start;
+        align-self: flex-start;
+        justify-content: flex-start;
+        height: 60px;
+    }
+
+    .main-content {
+        padding: 20px;
+        align-items: center;
+    }
+
+    #profilepic {
+        height: 250px;
+        width: 250px;
+    }
+
+    .details, h1 {
+        font-size: 1.7em;
+        margin-top: 10px;
+    }
+
+    .fa-linkedin,
+    .fa-github {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+        margin: 10px;
+    }
+    
+    li, a {
+        font-size: 1.2em;
+        padding: 15px 5px;
+        margin-left: 10px;
     }
     
 }
@@ -119,7 +237,47 @@ li a:hover {
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
 
     .body {
-        background-color: red;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar {
+        align-items: flex-start;
+        align-self: flex-start;
+        justify-content: flex-start;
+        height: 60px;
+    }
+
+    .main-content {
+        padding: 20px;
+        align-items: center;
+    }
+
+    #profilepic {
+        height: 270px;
+        width: 270px;
+    }
+
+    .details, h1 {
+        font-size: 1.9em;
+        margin-top: 10px;
+    }
+
+    .fa-linkedin,
+    .fa-github {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+        margin: 10px;
+    }
+    
+    li, a {
+        font-size: 1.2em;
+        padding: 15px 5px;
+        margin-left: 10px;
     }
     
 }
@@ -127,7 +285,9 @@ li a:hover {
 @media screen and (min-width: 1201px) {
 
     .body {
-        background-color: green;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
         width: 100%;
         height: 100%;
     }
@@ -159,6 +319,7 @@ li a:hover {
         width: 40px;
         height: 40px;
         padding: 6px;
+        margin: 10px;
     }
     
     li, a {
