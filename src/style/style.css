@@ -8,8 +8,8 @@
     box-sizing: border-box;
 }
 
-
-.body {
+.body,
+.project-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,7 +87,8 @@
 }
 
 .fa-linkedin,
-.fa-github {
+.fa-github,
+.fa-earlybirds {
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     text-decoration: none;
@@ -160,6 +161,47 @@
 .skills-content-rectangle li:hover {
    color: rgb(176, 38, 116);
 }
+
+
+/*For The Project Navigation Page*/
+
+.project-menu {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.project-menu a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.project-menu img {
+    display: block; 
+}
+
+.logo-title {
+    display: inline-block;
+    padding: 30px;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+}
+
+.project-menu a:link {
+    color: rgb(0, 0, 0);
+}
+
+.project-menu a:visited {
+    color: rgb(0, 0, 0);
+}
+
+.project-menu a:hover {
+    color: rgb(176, 38, 116);
+}
+
+
+
 
 
 
@@ -656,5 +698,14 @@
     .skills-list li {
         padding: 6px;
         font-size: 1.2em;
+    }
+
+    .project-menu img{
+        padding: 0px 60px;
+        height: 290px;
+    }
+
+    .logo-title {
+        font-size: 1.8em;
     }
 }
