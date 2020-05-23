@@ -170,7 +170,6 @@
 	justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
 }
 
 .project-menu a {
@@ -202,14 +201,12 @@
 
 
 
-
-
-
 /*Media Queries For Responsive Design*/
 
 @media screen and (max-width: 320px) {
 
-    .body {
+    .body,
+    .project-body {
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -302,13 +299,30 @@
     .skills-list li {
         padding: 5px;
         font-size: 1.1em;
+    }
+
+    .project-menu {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .project-menu img {
+        padding: 0px 60px;
+        height: 230px;
+    }
+
+    .logo-title {
+        font-size: 1.4em;
+        padding-top: 10px;
     }
     
 }
 
 @media screen and (min-width: 321px) and (max-width: 768px) {
 
-    .body {
+    .body,
+    .project-body {
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -402,12 +416,29 @@
         padding: 5px;
         font-size: 1.1em;
     }
+
+    .project-menu {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .project-menu img {
+        padding: 0px 60px;
+        height: 230px;
+    }
+
+    .logo-title {
+        font-size: 1.4em;
+        padding-top: 10px;
+    }
     
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
-    .body {
+    .body,
+    .project-body {
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -501,12 +532,29 @@
         padding: 5px;
         font-size: 1.1em;
     }
+
+    .project-menu {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .project-menu img {
+        padding: 0px 60px;
+        height: 230px;
+    }
+
+    .logo-title {
+        font-size: 1.6em;
+        padding-top: 10px;
+    }
     
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
 
-    .body {
+    .body,
+    .project-body {
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -600,12 +648,26 @@
         padding: 5px;
         font-size: 1.2em;
     }
+
+    .project-menu {
+        margin-top: 150px;
+    }
+
+    .project-menu img {
+        padding: 0px 60px;
+        height: 230px;
+    }
+
+    .logo-title {
+        font-size: 1.6em;
+    }
     
 }
 
 @media screen and (min-width: 1201px) {
 
-    .body {
+    .body,
+    .project-body {
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -700,9 +762,13 @@
         font-size: 1.2em;
     }
 
-    .project-menu img{
+    .project-menu {
+        margin-top: 150px;
+    }
+
+    .project-menu img {
         padding: 0px 60px;
-        height: 290px;
+        height: 260px;
     }
 
     .logo-title {
