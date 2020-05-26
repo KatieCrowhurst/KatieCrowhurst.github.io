@@ -240,7 +240,9 @@
 #bandpage,
 #dicegame,
 #calculator,
-#forkify {
+#forkify,
+#theatrewebsite,
+#theatredatabase {
     display: flex;
     flex-direction: column;
 }
