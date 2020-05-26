@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Early Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+
+    <nav class="navbar">
+        <ul class="navbar-items">
+            <li><a title="About Me" href="index.html">Home</a></li>
+            <li><a title="Projects" href="mainprojectspage.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+
+
+        <div class="tab-section">
+            <div class="tab-headings">
+                <ul class="tabs">
+                    <li data-tab-target="#html-tab" class="active tab">HTML/CSS</li>
+                    <li data-tab-target="#javascript-tab" class="tab">Udemy</li>
+                </ul>
+            </div>
+        
+            <div class="tab-content">
+                <div id="html-tab" data-tab-content class="active">
+                    <h1>Early Experimentation</h1>
+                    <p class="intropara"> When I first started learning HTML and CSS, it was important to understand the key concepts. This lead to
+                        a lot of experimentation, and a lot of simple pages being created. Here are some examples demonstrating my
+                        learning. Once I was comfortable with creating various elements and simple navigation, I wanted to increase the functionality
+                        on my pages.</p>
+                    <div id="codingjournal">
+                        <img id="journalimg" src="images/CodingJournal.png">
+                        <p>Here is one of the first HTML pages I made. It includes a background image, list, a small form, several small divs with 
+                            a shadow effect, and a footer included. Whilst quite plain and simple, it allowed me to learn how to create all of these 
+                            elements, and position them in a readable way.</p>
+                    </div>
+                    <div id="bandpage">
+                        <img id="bandpageimg" src="images/HtmlLearning.png">
+                        <p>This page allowed me to experiment with colour as a background for text, insert paragraphs of text, use borders, remove list styling, 
+                            and add in custom fonts. I added functionality to my list this time so a user could navigate to a separate page using a relative link 
+                            set in my HTML.</p>
+                    </div>
+                </div>
+                <div id="javascript-tab" data-tab-content>
+                    <h1>Learning JavaScript</h1>
+                    <p class="intropara"> I taught myself JavaScript through Udemy videos in my spare time after work. The course I took included theory, as well
+                        as practical projects to help solidify my learning. You can see some of the work I completed as part of this course below.</p>
+                    <h1>Dice Game</h1>
+                    <div id="dicegame">
+                        <img id="dicegameimg" src="images/DiceGame.png">
+                        <p>The first practical project on the course was a dice game. Players could input a target number to reach and players would take turns to roll
+                            the dice. The game was based on the dice game "Pig", and so had to incorporate certain rules, i.e. if a player rolls a one they lose all of 
+                            their points accumulated for that round.<br>This was my first time using JavaScript and I learned how to use event listeners (to listen for 
+                            the click event on the roll/hold buttons), how to use if statements (to put in place the rules, and to identify if the target score had been met),
+                            and some of JavaScript's math functions (Math.random to generate a random number).</p>
+                    </div>
+                    <h1>Budget Calculator</h1>
+                    <div id="calculator">
+                        <video id="budgetyvideo" width="600" height="400" controls>
+                            <source src="videos/BudgetyDemo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>The budget calculator app as you can see in this video, allows for user input. A user can add their monthly income/expenses and the app will
+                            display these in two separate lists. The app will also work out what percentage each expense is of the total income.<br> In this project I was
+                            introduced to the concept of controllers to separate and order my code, shown how to use and manipulate lists, had to carry out more
+                            mathematical equations (to work out the percentages), and how to interact with my HTML elements (for example how to update my UI 
+                            elements smoothly with each new addition/subtraction/percentage change).
+                        </p>
+                    </div>
+                    <h1>Forkify App</h1>
+                    <div id="forkify">
+                        <img id="forkifyimg" src="images/Forkify.png">
+                        <p>The Forkify app was my first time interacting with an API. A user is able to search for a food item, and the app will return a list of related
+                            recipes. The user can then view the recipe, and even add the ingredients to a shopping list.<br> I split my code into separate views and models so
+                            that I could keep related code/functions together, to make it easier to understand. Prior to this the other projects had been using JavaScript version
+                            ES5, but this project allowed me to explore version ES6.<br> This was also the first time I had been introduced to async/await. To handle loading of
+                            recipes in the UI once a search query had been initiated, I was able to render a loading spinner to visually indicate to a user that their request
+                            is currently being handled.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

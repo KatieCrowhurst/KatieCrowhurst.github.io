@@ -59,7 +59,8 @@
 
 /*For The Home Page*/
 
-.main-content {
+.main-content,
+.main-content-about-me {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -97,15 +98,6 @@
 
 
 /*For The "About Me" Page*/
-
-.main-content-about-me {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    height: calc(100% - 70px);
-    top: 70px;
-  }
 
   .page-title,
   .intro-content-rectangle,
@@ -199,6 +191,76 @@
     color: rgb(176, 38, 116);
 }
 
+
+/*For Tab Functionality On Each Project Page*/
+
+.tab-section {
+    background-color: rgba(238, 235, 234, 0.9);
+    height: 100%;
+    border-radius: 25px;
+    padding: 5px 20px 20px 20px;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tab.active {
+    color: rgb(176, 38, 116);
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    border-bottom: 2px solid rgb(176, 38, 116);
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+.tab {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.tab-content {
+    margin-top: 30px;
+}
+
+.tab-content h1 {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+#codingjournal,
+#bandpage,
+#dicegame,
+#calculator,
+#forkify {
+    display: flex;
+    flex-direction: column;
+}
+
+#journalimg,
+#bandpageimg,
+#dicegameimg,
+#forkifyimg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#journalimg:hover,
+#bandpageimg:hover {
+    opacity: 0.7;
+}
+
+#bandpageimg {
+    border: 1px solid black;
+}
 
 
 /*Media Queries For Responsive Design*/
@@ -316,6 +378,46 @@
         font-size: 1.4em;
         padding-top: 10px;
     }
+
+    .tab-section {
+        width: 85%;
+    }
+    
+    .tab-content h1 {
+        font-size: 1.4em;
+    }
+
+    .tab-content p {
+        padding: 30px 0px;
+    }
+    
+    .tab {
+        font-size: 1.4em;
+    }
+
+    #journalimg,
+    #bandpageimg,
+    #dicegameimg,
+    #forkifyimg {
+        width: 100%;
+        height: auto;
+    }
+
+    #journalimg,
+    #bandpageimg {
+        margin-top: 0px; 
+    }
+    
+    #dicegameimg,
+    #forkifyimg {
+        margin-top: 20px;
+    }
+
+    #budgetyvideo {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
     
 }
 
@@ -431,6 +533,46 @@
     .logo-title {
         font-size: 1.4em;
         padding-top: 10px;
+    }
+
+    .tab-section {
+        width: 85%;
+    }
+    
+    .tab-content h1 {
+        font-size: 1.4em;
+    }
+
+    .tab-content p {
+        padding: 30px 0px;
+    }
+    
+    .tab {
+        font-size: 1.4em;
+    }
+
+    #journalimg,
+    #bandpageimg,
+    #dicegameimg,
+    #forkifyimg {
+        width: 100%;
+        height: auto;
+    }
+
+    #journalimg,
+    #bandpageimg {
+        margin-top: 0px; 
+    }
+    
+    #dicegameimg,
+    #forkifyimg {
+        margin-top: 20px;
+    }
+
+    #budgetyvideo {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
     }
     
 }
@@ -548,6 +690,57 @@
         font-size: 1.6em;
         padding-top: 10px;
     }
+
+    .tab-section {
+        width: 85%;
+    }
+    
+    .tab-content h1 {
+        font-size: 1.5em;
+    }
+
+    .tab-content p {
+        padding: 30px 0px;
+    }
+    
+    .tab {
+        font-size: 1.5em;
+    }
+
+    #journalimg,
+    #bandpageimg {
+        margin-top: 0px; 
+    }
+    
+    #dicegameimg,
+    #forkifyimg {
+        margin-top: 20px;
+    }
+
+    #journalimg {
+        height: 350px;
+        width: 550px;
+    }
+
+    #bandpageimg {
+        width: 550px;
+        height: 450px;
+    }
+
+    #dicegameimg {
+        height: 370px;
+        width: 570px;
+    }
+
+    #forkifyimg {
+        height: 470px;
+        width: 570px;
+    }
+
+    #budgetyvideo {
+        height: 370px;
+        width: 570px;
+    }
     
 }
 
@@ -661,6 +854,56 @@
     .logo-title {
         font-size: 1.6em;
     }
+
+    .tab-section {
+        width: 75%;
+    }
+    
+    .tab-content h1 {
+        font-size: 1.6em;
+    }
+
+    .tab-content p {
+        padding: 30px 20px;
+    }
+    
+    .tab {
+        font-size: 1.6em;
+    }
+
+    #journalimg,
+    #bandpageimg,
+    #dicegameimg,
+    #forkifyimg {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #journalimg {
+        height: 400px;
+        width: 600px;
+    }
+
+    #bandpageimg {
+        width: 600px;
+        height: 500px;
+    }
+
+    #dicegameimg {
+        height: 400px;
+        width: 600px;
+    }
+
+    #forkifyimg {
+        height: 450px;
+        width: 550px;
+    }
+
+    #budgetyvideo {
+        margin-left: 20px;
+        height: 400px;
+        width: 600px;
+    }
     
 }
 
@@ -773,5 +1016,53 @@
 
     .logo-title {
         font-size: 1.8em;
+    }
+
+    .tab-section {
+        width: 70%;
+    }
+    
+    .tab-content h1 {
+        font-size: 1.7em;
+    }
+
+    .tab-content p {
+        padding: 30px 20px;
+    }
+    
+    .tab {
+        font-size: 1.6em;
+    }
+
+    #journalimg,
+    #bandpageimg,
+    #dicegameimg,
+    #forkifyimg {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #journalimg {
+        height: 400px;
+        width: 600px;
+    }
+
+    #bandpageimg {
+        width: 600px;
+        height: 500px;
+    }
+
+    #dicegameimg {
+        height: 400px;
+        width: 600px;
+    }
+
+    #forkifyimg {
+        height: 450px;
+        width: 550px;
+    }
+
+    #budgetyvideo {
+        margin-left: 20px;
     }
 }
