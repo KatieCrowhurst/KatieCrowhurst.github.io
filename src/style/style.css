@@ -236,13 +236,14 @@
     text-decoration: underline;
 }
 
+/*Project Pages*/
+
 #codingjournal,
 #bandpage,
 #dicegame,
 #calculator,
 #forkify,
-#theatrewebsite,
-#theatredatabase {
+#webdev {
     display: flex;
     flex-direction: column;
 }
@@ -250,13 +251,15 @@
 #journalimg,
 #bandpageimg,
 #dicegameimg,
-#forkifyimg {
+#forkifyimg,
+#theatrebooking {
     cursor: pointer;
     transition: 0.3s;
 }
 
 #journalimg:hover,
-#bandpageimg:hover {
+#bandpageimg:hover
+#theatrebooking:hover {
     opacity: 0.7;
 }
 
@@ -271,36 +274,6 @@
     font-weight: 400 !important;
 }
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1200px;
-    position: relative;
-    margin: auto;
-  }
-
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 20px 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .dot:hover {
-    background-color: #717171;
-  }
 
 
 /*Media Queries For Responsive Design*/
@@ -438,7 +411,12 @@
     #journalimg,
     #bandpageimg,
     #dicegameimg,
-    #forkifyimg {
+    #forkifyimg,
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg {
         width: 100%;
         height: auto;
     }
@@ -449,7 +427,12 @@
     }
     
     #dicegameimg,
-    #forkifyimg {
+    #forkifyimg,
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg {
         margin-top: 20px;
     }
 
@@ -457,6 +440,17 @@
         width: 100%;
         height: auto;
         margin-top: 20px;
+    }
+
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg {
+        margin-bottom: 30px;
+    }
+
+    #wekatesttableimg {
+        margin-bottom: 10px;
     }
     
 }
@@ -594,7 +588,12 @@
     #journalimg,
     #bandpageimg,
     #dicegameimg,
-    #forkifyimg {
+    #forkifyimg,
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg {
         width: 100%;
         height: auto;
     }
@@ -605,7 +604,12 @@
     }
     
     #dicegameimg,
-    #forkifyimg {
+    #forkifyimg,
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg {
         margin-top: 20px;
     }
 
@@ -613,6 +617,17 @@
         width: 100%;
         height: auto;
         margin-top: 20px;
+    }
+
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg {
+        margin-bottom: 30px;
+    }
+
+    #wekatesttableimg {
+        margin-bottom: 10px;
     }
     
 }
@@ -753,7 +768,12 @@
     }
     
     #dicegameimg,
-    #forkifyimg {
+    #forkifyimg,
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg {
         margin-top: 20px;
     }
 
@@ -779,6 +799,36 @@
 
     #budgetyvideo {
         height: 370px;
+        width: 570px;
+    }
+
+    #theatrebooking {
+        margin-bottom: 30px;
+        height: 340px;
+        width: 570px;
+    }
+
+    #sequencediagram {
+        margin-bottom: 30px;
+        height: 380px;
+        width: 570px;
+    }
+
+    #prologassessment {
+        margin-bottom: 30px;
+        height: 175px;
+        width: 570px;
+    }
+
+    #polishparserimg {
+        margin-bottom: 30px;
+        height: 380px;
+        width: 570px;
+    }
+
+    #wekatesttableimg {
+        margin-bottom: 30px;
+        height: 450px;
         width: 570px;
     }
     
@@ -914,9 +964,14 @@
     #journalimg,
     #bandpageimg,
     #dicegameimg,
-    #forkifyimg {
+    #forkifyimg,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg {
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 5px;
+        padding-right: 5px;
     }
 
     #journalimg {
@@ -943,6 +998,37 @@
         margin-left: 20px;
         height: 400px;
         width: 600px;
+    }
+
+    #theatrebooking {
+        margin-bottom: 30px;
+        padding-top: 20px;
+        height: 420px;
+        width: 690px;
+    }
+
+    #sequencediagram {
+        margin-bottom: 30px;
+        height: 450px;
+        width: 690px;
+    }
+
+    #prologassessment {
+        margin-bottom: 30px;
+        height: 250px;
+        width: 690px;
+    }
+
+    #polishparserimg {
+        margin-bottom: 30px;
+        height: 450px;
+        width: 690px;
+    }
+
+    #wekatesttableimg {
+        margin-bottom: 30px;
+        height: 500px;
+        width: 690px;
     }
     
 }
@@ -1077,9 +1163,15 @@
     #journalimg,
     #bandpageimg,
     #dicegameimg,
-    #forkifyimg {
+    #forkifyimg,
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg  {
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 5px;
+        padding-right: 5px;
     }
 
     #journalimg {
@@ -1106,8 +1198,36 @@
         margin-left: 20px;
     }
 
-    /* Slideshow container */
-    .slideshow-container {
-        padding-top: 20px;
+    #theatrebooking {
+        margin-bottom: 30px;
+        height: 450px;
+        width: 770px;
     }
+
+    #sequencediagram {
+        margin-bottom: 30px;
+        height: 450px;
+        width: 770px;
+    }
+
+    #prologassessment {
+        margin-bottom: 30px;
+        height: 250px;
+        width: 770px;
+    }
+
+    #polishparserimg {
+        margin-bottom: 30px;
+        height: 450px;
+        width: 770px;
+    }
+
+    #wekatesttableimg {
+        margin-bottom: 30px;
+        height: 500px;
+        width: 770px;
+    }
+
+    
 }
+  
