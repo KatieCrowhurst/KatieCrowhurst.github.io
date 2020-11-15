@@ -44,20 +44,9 @@
 }
 
 
-.skills-list {
-    list-style: none;
-}
-
-.skills-list li {
-    display: inline-block;
-}
-
-
-
 /*For The Home Page*/
 
-.main-content-home,
-.main-content-about-me {
+.main-content-home {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -67,7 +56,9 @@
   }
 
 
-.details {
+.details,
+.about-title,
+.introduction {
     flex-direction: row-reverse;
     color: #ffffff;
 }
@@ -101,7 +92,7 @@
 
 .fa-linkedin,
 .fa-github {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border-radius: 50%;
     text-decoration: none;
     color: #843aff;
@@ -111,59 +102,22 @@
 
 /*For The "About Me" Page*/
 
-  .page-title,
-  .intro-content-rectangle,
-  .learning-content-rectangle {
-      display: flex;
-      width: 90%;
-      align-self: center;
-  }
-
-  .page-title {
-    align-items: center;
-    align-self: center;
-    justify-content: center;
+.main-content-about {
+    display: flex;
     flex-direction: column;
-    margin: 0 auto;
-  }
-
-.intro-content-rectangle {
     position: relative;
-    flex-direction: column;
-    background: rgba(176, 38, 116, 0.9);
-    border-radius: 25px;
-    box-shadow: 0px 3px 3px rgba(238, 235, 234, 0.6);
+    width: 100%;
+    height: calc(100% - 200px);
+    top: 200px; 
+}
+
+.introduction {
+    flex-direction: row-reverse;
+    color: #ffffff;
+}
+
+.introduction p {
     margin-top: 30px;
-}
-
-.intro-content-rectangle h2,
-.learning-content-rectangle h2 {
-    padding-left: 10px;
-}
-
-.intro-content-rectangle p,
-.intro-content-rectangle h2 {
-    color: rgb(238, 235, 234);
-}
-
-.learning-content-rectangle {
-    position: relative;
-    flex-direction: column;
-    background: rgba(238, 235, 234, 0.9);
-    border-radius: 25px;
-    box-shadow: 0px 3px 3px rgba(176, 38, 116, 0.6);
-    margin-top: 15px;
-}
-
-.skills-content-rectangle {
-    background: rgba(238, 235, 234, 0.9);
-    border-radius: 25px;
-    box-shadow: 0px 3px 3px rgba(176, 38, 116, 0.6);
-    margin-top: 15px;
-}
-
-.skills-content-rectangle li:hover {
-   color: rgb(176, 38, 116);
 }
 
 
@@ -315,7 +269,8 @@
         padding: 20px 50px;
     }
 
-    #name {
+    #name,
+    #title {
         font-size: 40px;
     }
 
@@ -330,52 +285,13 @@
         padding: 4px;
     }
     
-    .intro-content-rectangle,
-    .learning-content-rectangle,
-    .skills-content-rectangle {
-        padding: 10px;
+    .main-content-about {
+        align-items: center;
+        padding: 20px 50px;
     }
-
     
-    .intro-content-rectangle h2{
-        font-size: 1.05em;
-        text-decoration: underline;
-    }
-
-    .intro-content-rectangle p{
-        font-size: 1.05em;
-        padding: 10px;
-        text-decoration: none;
-    }
-
-    .learning-content-rectangle {
-        margin-bottom: 40px;
-    }
-
-    .learning-content-rectangle h2{
-        font-size: 1.05em;
-        text-decoration: underline;
-    }
-
-    .learning-content-rectangle p{
-        font-size: 1.05em;
-        padding: 10px;
-        text-decoration: none;
-    }
-
-    .skills-content-rectangle {
-        align-self: center;
-        width: 90%;
-    }
-
-    .skills-content-rectangle h2{
-        padding-left: 5px;
-        font-size: 1.1em;
-    }
-
-    .skills-list li {
-        padding: 5px;
-        font-size: 1.1em;
+    .introduction p {
+        font-size: 15px;
     }
 
     .project-menu {
@@ -482,8 +398,9 @@
         padding: 20px 50px;
     }
 
-    #name {
-        font-size: 50px;
+    #name,
+    #title {
+        font-size: 40px;
     }
 
     #job {
@@ -497,52 +414,13 @@
         padding: 4px;
     }
     
-    .intro-content-rectangle,
-    .learning-content-rectangle,
-    .skills-content-rectangle {
-        padding: 10px;
+    .main-content-about {
+        align-items: center;
+        padding: 20px 50px;
     }
-
     
-    .intro-content-rectangle h2{
-        font-size: 1.05em;
-        text-decoration: underline;
-    }
-
-    .intro-content-rectangle p{
-        font-size: 1.05em;
-        padding: 10px;
-        text-decoration: none;
-    }
-
-    .learning-content-rectangle {
-        margin-bottom: 40px;
-    }
-
-    .learning-content-rectangle h2{
-        font-size: 1.05em;
-        text-decoration: underline;
-    }
-
-    .learning-content-rectangle p{
-        font-size: 1.05em;
-        padding: 10px;
-        text-decoration: none;
-    }
-
-    .skills-content-rectangle {
-        align-self: center;
-        width: 90%;
-    }
-
-    .skills-content-rectangle h2{
-        padding-left: 5px;
-        font-size: 1.1em;
-    }
-
-    .skills-list li {
-        padding: 5px;
-        font-size: 1.1em;
+    .introduction p {
+        font-size: 15px;
     }
 
     .project-menu {
@@ -649,8 +527,9 @@
         padding: 20px 80px;
     }
 
-    #name {
-        font-size: 60px;
+    #name,
+    #title {
+        font-size: 50px;
     }
 
     #job {
@@ -664,52 +543,13 @@
         padding: 4px;
     }
     
-    .intro-content-rectangle,
-    .learning-content-rectangle,
-    .skills-content-rectangle {
-        padding: 10px;
+    .main-content-about {
+        align-items: flex-start;
+        padding: 20px 100px;
     }
-
     
-    .intro-content-rectangle h2{
-        font-size: 1.05em;
-        text-decoration: underline;
-    }
-
-    .intro-content-rectangle p{
-        font-size: 1.05em;
-        padding: 10px;
-        text-decoration: none;
-    }
-
-    .learning-content-rectangle {
-        margin-bottom: 40px;
-    }
-
-    .learning-content-rectangle h2{
-        font-size: 1.05em;
-        text-decoration: underline;
-    }
-
-    .learning-content-rectangle p{
-        font-size: 1.05em;
-        padding: 10px;
-        text-decoration: none;
-    }
-
-    .skills-content-rectangle {
-        align-self: center;
-        width: 90%;
-    }
-
-    .skills-content-rectangle h2{
-        padding-left: 5px;
-        font-size: 1.1em;
-    }
-
-    .skills-list li {
-        padding: 5px;
-        font-size: 1.1em;
+    .introduction p {
+        font-size: 16px;
     }
 
     .project-menu {
@@ -851,8 +691,9 @@
         padding: 20px 100px;
     }
 
-    #name {
-        font-size: 65px;
+    #name,
+    #title {
+        font-size: 60px;
     }
 
     #job {
@@ -865,52 +706,13 @@
         height: 40px;
     }
 
-    .intro-content-rectangle,
-    .learning-content-rectangle,
-    .skills-content-rectangle {
-        padding: 10px;
+    .main-content-about {
+        align-items: flex-start;
+        padding: 20px 100px;
     }
-
     
-    .intro-content-rectangle h2{
-        font-size: 1.05em;
-        text-decoration: underline;
-    }
-
-    .intro-content-rectangle p{
-        font-size: 1.05em;
-        padding: 10px;
-        text-decoration: none;
-    }
-
-    .learning-content-rectangle {
-        margin-bottom: 40px;
-    }
-
-    .learning-content-rectangle h2{
-        font-size: 1.05em;
-        text-decoration: underline;
-    }
-
-    .learning-content-rectangle p{
-        font-size: 1.05em;
-        padding: 10px;
-        text-decoration: none;
-    }
-
-    .skills-content-rectangle {
-        align-self: center;
-        width: 90%;
-    }
-
-    .skills-content-rectangle h2{
-        padding-left: 5px;
-        font-size: 1.2em;
-    }
-
-    .skills-list li {
-        padding: 5px;
-        font-size: 1.2em;
+    .introduction p {
+        font-size: 17px;
     }
 
     .project-menu {
@@ -1033,12 +835,14 @@
         padding: 15px 30px;
     }
 
-    .main-content-home {
+    .main-content-home,
+    .main-content-about {
         align-items: flex-start;
         padding: 20px 100px;
     }
 
-    #name {
+    #name,
+    #title {
         font-size: 65px;
     }
 
@@ -1052,53 +856,15 @@
         height: 40px;
     }
 
-    .intro-content-rectangle,
-    .learning-content-rectangle,
-    .skills-content-rectangle {
-        padding: 10px;
+    .main-content-about {
+        align-items: flex-start;
+        padding: 20px 100px;
     }
-
     
-    .intro-content-rectangle h2{
-        font-size: 1.05em;
-        text-decoration: underline;
+    .introduction p {
+        font-size: 18px;
     }
 
-    .intro-content-rectangle p{
-        font-size: 1.05em;
-        padding: 10px;
-        text-decoration: none;
-    }
-
-    .learning-content-rectangle {
-        margin-bottom: 40px;
-    }
-
-    .learning-content-rectangle h2{
-        font-size: 1.05em;
-        text-decoration: underline;
-    }
-
-    .learning-content-rectangle p{
-        font-size: 1.05em;
-        padding: 10px;
-        text-decoration: none;
-    }
-
-    .skills-content-rectangle {
-        align-self: center;
-        width: 90%;
-    }
-
-    .skills-content-rectangle h2{
-        padding-left: 5px;
-        font-size: 1.2em;
-    }
-
-    .skills-list li {
-        padding: 6px;
-        font-size: 1.2em;
-    }
 
     .project-menu {
         margin-top: 150px;
