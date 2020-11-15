@@ -8,8 +8,8 @@
     box-sizing: border-box;
 }
 
-
-.body {
+.body,
+.project-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +59,8 @@
 
 /*For The Home Page*/
 
-.main-content {
+.main-content,
+.main-content-about-me {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -87,7 +88,8 @@
 }
 
 .fa-linkedin,
-.fa-github {
+.fa-github,
+.fa-earlybirds {
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     text-decoration: none;
@@ -96,15 +98,6 @@
 
 
 /*For The "About Me" Page*/
-
-.main-content-about-me {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    height: calc(100% - 70px);
-    top: 70px;
-  }
 
   .page-title,
   .intro-content-rectangle,
@@ -162,12 +155,133 @@
 }
 
 
+/*For The Project Navigation Page*/
+
+.project-menu {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project-menu a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.project-menu img {
+    display: block; 
+}
+
+.logo-title {
+    display: inline-block;
+    padding: 30px;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+}
+
+.project-menu a:link {
+    color: rgb(0, 0, 0);
+}
+
+.project-menu a:visited {
+    color: rgb(0, 0, 0);
+}
+
+.project-menu a:hover {
+    color: rgb(176, 38, 116);
+}
+
+
+/*For Tab Functionality On Each Project Page*/
+
+.tab-section {
+    background-color: rgba(238, 235, 234, 0.9);
+    height: 100%;
+    border-radius: 25px;
+    padding: 5px 20px 20px 20px;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tab.active {
+    color: rgb(176, 38, 116);
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    border-bottom: 2px solid rgb(176, 38, 116);
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+.tab {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.tab-content {
+    margin-top: 30px;
+}
+
+.tab-content h1 {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+/*Project Pages*/
+
+#codingjournal,
+#bandpage,
+#dicegame,
+#calculator,
+#forkify,
+#webdev {
+    display: flex;
+    flex-direction: column;
+}
+
+#journalimg,
+#bandpageimg,
+#dicegameimg,
+#forkifyimg,
+#theatrebooking {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#journalimg:hover,
+#bandpageimg:hover
+#theatrebooking:hover {
+    opacity: 0.7;
+}
+
+#bandpageimg {
+    border: 1px solid black;
+}
+
+
+/*University Work Page*/
+
+.subheading {
+    font-weight: 400 !important;
+}
+
+
 
 /*Media Queries For Responsive Design*/
 
 @media screen and (max-width: 320px) {
 
-    .body {
+    .body,
+    .project-body {
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -260,13 +374,91 @@
     .skills-list li {
         padding: 5px;
         font-size: 1.1em;
+    }
+
+    .project-menu {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .project-menu img {
+        padding: 0px 60px;
+        height: 230px;
+    }
+
+    .logo-title {
+        font-size: 1.4em;
+        padding-top: 10px;
+    }
+
+    .tab-section {
+        width: 85%;
+    }
+    
+    .tab-content h1 {
+        font-size: 1.4em;
+    }
+
+    .tab-content p {
+        padding: 30px 0px;
+    }
+    
+    .tab {
+        font-size: 1.4em;
+    }
+
+    #journalimg,
+    #bandpageimg,
+    #dicegameimg,
+    #forkifyimg,
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg {
+        width: 100%;
+        height: auto;
+    }
+
+    #journalimg,
+    #bandpageimg {
+        margin-top: 0px; 
+    }
+    
+    #dicegameimg,
+    #forkifyimg,
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg {
+        margin-top: 20px;
+    }
+
+    #budgetyvideo {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg {
+        margin-bottom: 30px;
+    }
+
+    #wekatesttableimg {
+        margin-bottom: 10px;
     }
     
 }
 
 @media screen and (min-width: 321px) and (max-width: 768px) {
 
-    .body {
+    .body,
+    .project-body {
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -360,12 +552,90 @@
         padding: 5px;
         font-size: 1.1em;
     }
+
+    .project-menu {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .project-menu img {
+        padding: 0px 60px;
+        height: 230px;
+    }
+
+    .logo-title {
+        font-size: 1.4em;
+        padding-top: 10px;
+    }
+
+    .tab-section {
+        width: 85%;
+    }
+    
+    .tab-content h1 {
+        font-size: 1.4em;
+    }
+
+    .tab-content p {
+        padding: 30px 0px;
+    }
+    
+    .tab {
+        font-size: 1.4em;
+    }
+
+    #journalimg,
+    #bandpageimg,
+    #dicegameimg,
+    #forkifyimg,
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg {
+        width: 100%;
+        height: auto;
+    }
+
+    #journalimg,
+    #bandpageimg {
+        margin-top: 0px; 
+    }
+    
+    #dicegameimg,
+    #forkifyimg,
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg {
+        margin-top: 20px;
+    }
+
+    #budgetyvideo {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg {
+        margin-bottom: 30px;
+    }
+
+    #wekatesttableimg {
+        margin-bottom: 10px;
+    }
     
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
-    .body {
+    .body,
+    .project-body {
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -459,12 +729,115 @@
         padding: 5px;
         font-size: 1.1em;
     }
+
+    .project-menu {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .project-menu img {
+        padding: 0px 60px;
+        height: 230px;
+    }
+
+    .logo-title {
+        font-size: 1.6em;
+        padding-top: 10px;
+    }
+
+    .tab-section {
+        width: 85%;
+    }
+    
+    .tab-content h1 {
+        font-size: 1.5em;
+    }
+
+    .tab-content p {
+        padding: 30px 0px;
+    }
+    
+    .tab {
+        font-size: 1.5em;
+    }
+
+    #journalimg,
+    #bandpageimg {
+        margin-top: 0px; 
+    }
+    
+    #dicegameimg,
+    #forkifyimg,
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg {
+        margin-top: 20px;
+    }
+
+    #journalimg {
+        height: 350px;
+        width: 550px;
+    }
+
+    #bandpageimg {
+        width: 550px;
+        height: 450px;
+    }
+
+    #dicegameimg {
+        height: 370px;
+        width: 570px;
+    }
+
+    #forkifyimg {
+        height: 470px;
+        width: 570px;
+    }
+
+    #budgetyvideo {
+        height: 370px;
+        width: 570px;
+    }
+
+    #theatrebooking {
+        margin-bottom: 30px;
+        height: 340px;
+        width: 570px;
+    }
+
+    #sequencediagram {
+        margin-bottom: 30px;
+        height: 380px;
+        width: 570px;
+    }
+
+    #prologassessment {
+        margin-bottom: 30px;
+        height: 175px;
+        width: 570px;
+    }
+
+    #polishparserimg {
+        margin-bottom: 30px;
+        height: 380px;
+        width: 570px;
+    }
+
+    #wekatesttableimg {
+        margin-bottom: 30px;
+        height: 450px;
+        width: 570px;
+    }
     
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
 
-    .body {
+    .body,
+    .project-body {
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -558,12 +931,112 @@
         padding: 5px;
         font-size: 1.2em;
     }
+
+    .project-menu {
+        margin-top: 150px;
+    }
+
+    .project-menu img {
+        padding: 0px 60px;
+        height: 230px;
+    }
+
+    .logo-title {
+        font-size: 1.6em;
+    }
+
+    .tab-section {
+        width: 75%;
+    }
+    
+    .tab-content h1 {
+        font-size: 1.6em;
+    }
+
+    .tab-content p {
+        padding: 30px 20px;
+    }
+    
+    .tab {
+        font-size: 1.6em;
+    }
+
+    #journalimg,
+    #bandpageimg,
+    #dicegameimg,
+    #forkifyimg,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg {
+        margin-top: 20px;
+        margin-left: 5px;
+        padding-right: 5px;
+    }
+
+    #journalimg {
+        height: 400px;
+        width: 600px;
+    }
+
+    #bandpageimg {
+        width: 600px;
+        height: 500px;
+    }
+
+    #dicegameimg {
+        height: 400px;
+        width: 600px;
+    }
+
+    #forkifyimg {
+        height: 450px;
+        width: 550px;
+    }
+
+    #budgetyvideo {
+        margin-left: 20px;
+        height: 400px;
+        width: 600px;
+    }
+
+    #theatrebooking {
+        margin-bottom: 30px;
+        padding-top: 20px;
+        height: 420px;
+        width: 690px;
+    }
+
+    #sequencediagram {
+        margin-bottom: 30px;
+        height: 450px;
+        width: 690px;
+    }
+
+    #prologassessment {
+        margin-bottom: 30px;
+        height: 250px;
+        width: 690px;
+    }
+
+    #polishparserimg {
+        margin-bottom: 30px;
+        height: 450px;
+        width: 690px;
+    }
+
+    #wekatesttableimg {
+        margin-bottom: 30px;
+        height: 500px;
+        width: 690px;
+    }
     
 }
 
 @media screen and (min-width: 1201px) {
 
-    .body {
+    .body,
+    .project-body {
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -657,4 +1130,104 @@
         padding: 6px;
         font-size: 1.2em;
     }
+
+    .project-menu {
+        margin-top: 150px;
+    }
+
+    .project-menu img {
+        padding: 0px 60px;
+        height: 260px;
+    }
+
+    .logo-title {
+        font-size: 1.8em;
+    }
+
+    .tab-section {
+        width: 70%;
+    }
+    
+    .tab-content h1 {
+        font-size: 1.7em;
+    }
+
+    .tab-content p {
+        padding: 30px 20px;
+    }
+    
+    .tab {
+        font-size: 1.6em;
+    }
+
+    #journalimg,
+    #bandpageimg,
+    #dicegameimg,
+    #forkifyimg,
+    #theatrebooking,
+    #sequencediagram,
+    #prologassessment,
+    #polishparserimg,
+    #wekatesttableimg  {
+        margin-top: 20px;
+        margin-left: 5px;
+        padding-right: 5px;
+    }
+
+    #journalimg {
+        height: 400px;
+        width: 600px;
+    }
+
+    #bandpageimg {
+        width: 600px;
+        height: 500px;
+    }
+
+    #dicegameimg {
+        height: 400px;
+        width: 600px;
+    }
+
+    #forkifyimg {
+        height: 450px;
+        width: 550px;
+    }
+
+    #budgetyvideo {
+        margin-left: 20px;
+    }
+
+    #theatrebooking {
+        margin-bottom: 30px;
+        height: 450px;
+        width: 770px;
+    }
+
+    #sequencediagram {
+        margin-bottom: 30px;
+        height: 450px;
+        width: 770px;
+    }
+
+    #prologassessment {
+        margin-bottom: 30px;
+        height: 250px;
+        width: 770px;
+    }
+
+    #polishparserimg {
+        margin-bottom: 30px;
+        height: 450px;
+        width: 770px;
+    }
+
+    #wekatesttableimg {
+        margin-bottom: 30px;
+        height: 500px;
+        width: 770px;
+    }
+
+    
 }
+  
