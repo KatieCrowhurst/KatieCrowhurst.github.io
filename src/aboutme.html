@@ -4,78 +4,44 @@
     <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body class="body">
 
-    <nav class="navbar">
-        <ul class="navbar-items">
-            <li><a title="About Me" href="index.html">Home</a></li>
-            <li><a title="Projects" href="mainprojectspage.html">Projects</a></li>
-        </ul>
-    </nav>
+    <div id="vanta-background">
 
-    <div class="main-content-about-me">
-        <div class="page-title">
-            <h1>About Me</h1>
+        <nav class="navbar">
+            <a href="index.html"><i class="fa fa-fw fa-home"></i></a> 
+            <a class="about active" href="#"><i class="fa fa-fw fa-user"></i></a>
+            <a href="mainprojectspage.html"><i class="fa fa-folder-open"></i></a>
+        </nav>
+
+        <div class="main-content-about">
+            <div class="about-title">
+                <h1 id="title">About Me</h1>
+            </div>
+            <div class="introduction">
+                <p>Hi I'm Katie! I am based in Kent, and I am currently employed as a Junior Developer. I graduated <br> with a Distinction in my MSc Computer Science in 2019, and
+                    I spend a lot of my time trying to learn <br> new things that will support my development career.</p>
+                <p>I am a well-organised and motivated person, with a strong interest in Front-End development. <br> I love wireframing prototypes, creatively solving issues
+                     and giving life to my designs. However, <br> in the future I would love to secure a Full-Stack Developer role to enable me to fully design systems <br> from
+                     start to finish - being involved in every step of the process. 
+                </p>
+                <p>
+                    When I'm not coding I enjoy gaming, reading and spending time exercising outdoors with my mother. <br> There's always time for a good TV series too!
+                </p>
+                <p>
+                    Current skillset: HTML, CSS, JavaScript, MySQL, PHP, Java, Git, Prolog, jQuery, C#
+                </p>
+            </div>
         </div>
-        <div class="skills-content-rectangle">
-            <h2>Current Skill Set</h2>
-            <ul class="skills-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>MySQL</li>
-                <li>PHP</li>
-                <li>Java</li>
-                <li>Git</li>
-                <li>Prolog</li>
-                <li>Python</li>
-                <li>JQuery</li>
-                <li>Linux</li>
-                <li>C#</li>
-            </ul>
-        </div>
-        <div class="intro-content-rectangle">
-            <p>Hello and welcome to my portfolio website! This website is designed to showcase the projects and work 
-                that have kept me busy and allowed me to develop the skillset that I have today. Please feel free to take a look!</p>
-            <h2>Who am I?</h2>
-            <p>My name is Katie Crowhurst and I currently work as a Junior Developer for Integrated Care 24 (IC24).</p>
-            <h2>My Journey</h2>
-            <p>My journey to get to where I am today has most definitely been interesting. I actually come from a Child Psychology 
-                background – I studied a Childcare Diploma at college and went on to complete a Bachelor’s degree in Childhood and 
-                Youth Studies with Psychology. Unfortunately this was the first year that the university were running this course, 
-                and during my final year of study, we were told that they had not succeeded in getting accreditation from the British 
-                Psychological Society (BPS) for the course like they had hoped. I had hoped to pursue a career as an Educational Psychologist, 
-                but this news meant that the journey would be a lot tougher, and in the end, something that financially I would not be able to afford.</p>
-            <p>After moving back home with my parents and working in roles where I was unfortunately able to progress, I started heavily 
-                researching into new career sectors that I could venture into. I wanted a role that was challenging, exciting - something 
-                completely new where I could really succeed. My partner was a Network Engineer at the time, studying for Cisco certifications, and on 
-                weekends when I would visit him we would watch some of the course content together. This, and his support, encouraged me to delve into 
-                the IT sector, where I discovered I was extremely interested in web development.<br> It was new, exciting, challenging, with a huge 
-                variety of learning experiences and paths to follow, and actually very rewarding. I love the feeling of building something up from scratch!</p>
-        </div>
-        <div class="learning-content-rectangle">
-            <h2>My Learning</h2>
-            <p>I taught myself HTML, CSS, JavaScript and the basics of MySQL over roughly a year and a half. In the early stages of my learning I created a 
-                basic Coding Journal website which gave me a clear understanding of HTML and CSS. I also started to create a basic “About Me” website, which 
-                has now been re-purposed in the building of this website.<br>Once I felt comfortable with HTML and CSS, I took a Udemy course to learn JavaScript. 
-                The course combined theory and practical projects, and really allowed me to become confident in using JavaScript. I was able to manipulate my HTML 
-                elements, create event handlers and provide interactivity in my pages.</p>
-            <p>Once I felt comfortable with HTML and CSS, I took a Udemy course to learn JavaScript. The course combined theory and practical projects, and really 
-                allowed me to become confident in using JavaScript. I was able to manipulate my HTML elements, create event handlers and provide interactivity in 
-                my pages.</p>
-            <p>We were challenged through practical assessments – a lot of which are detailed in the Projects section of this website. My confidence with HTML, CSS 
-                and JavaScript increased when creating a Theatre Booking website, and my IBD application for my dissertation project. Particularly in my dissertation 
-                project I was able to interact with my database from my HTML, which I’d never done before. I became comfortable with creating and querying databases, 
-                and accessing them on my webpages through PHP Data Objects (PDO). I was introduced to Object Oriented Programming through learning Java. I was also 
-                introduced to logic programming and the declarative programming language Prolog – which I must admit I wasn’t so keen on!</p>
-            <p>However the course did not only boost my confidence in using various different languages. I also learned the process of becoming a developer. I learned 
-                the process of requirements gathering, the importance of design in building software, how to demonstrate a product’s behaviour prior to development 
-                through wireframes, using UML diagrams to show system processes, the importance of testing, and collaboration with others using GitHub.</p>
-            <p>For more information on the work I have done, please feel free to browse my work on the Projects page of this website.</p>
-        </div>
+
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
