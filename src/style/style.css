@@ -12,88 +12,100 @@
 .project-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-image: url("../images/BackgroundImage.jpg");
-    background-repeat: no-repeat;
+    justify-content: flex-start;
+}
+
+#vanta-background {
+    width: auto;
+    height: 100vh;
 }
 
 .navbar {
     display: flex;
+    flex-direction: row;
     position: fixed;
-    justify-content: flex-start;
-    top: 0;
-    left: 0;
+    background-color: #0c0c0c;
     width: 100%;
-    height: 70px;
-    background-color: rgb(255, 255, 255, 0.5);
-    box-shadow: 0px 2px 3px -2px rgb(176, 38, 116);
-    z-index: 5;
+    height: 80px;
+    top: 0;
+    z-index: 3;
 }
 
-.navbar-items,
+.navbar a {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    color:#ffffff;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    border-bottom: 3px solid #843aff;
+}
+
+
 .skills-list {
     list-style: none;
 }
 
-.navbar-items li,
 .skills-list li {
     display: inline-block;
 }
 
-.navbar-items li a {
-    text-decoration: none;
-}
-
-.navbar-items li a:link {
-    color: rgb(0, 0, 0);
-}
-
-.navbar-items li a:visited {
-    color: rgb(0, 0, 0);
-}
-
-.navbar-items li a:hover {
-    color: rgb(176, 38, 116);
-}
 
 
 /*For The Home Page*/
 
-.main-content,
+.main-content-home,
 .main-content-about-me {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
-    height: calc(100% - 70px);
-    top: 70px;
+    height: calc(100% - 300px);
+    top: 300px;
   }
 
-#profilepic {
-    border-radius: 50%;
-    border-style: solid;
-    border-color: rgb(255, 255, 255);
-    box-shadow: 0 3px 3px rgba(176, 38, 116, 0.6);
-    border-width: 5px;
-}
 
 .details {
-    color: rgb(0, 0, 0);
-    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+    flex-direction: row-reverse;
+    color: #ffffff;
 }
 
-.icons {
+/*Typing Effect*/
+
+#name {
+    overflow: hidden;
+    border-right: .1em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; 
+    margin: 0 auto;
+    animation: 
+        typing 2.5s steps(30),
+        cursor 5s;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes cursor {
+    from, to { border-color: transparent }
+    50% { border-color: pink }
+  }
+
+.social-media-icons {
     flex-direction: row-reverse;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .fa-linkedin,
-.fa-github,
-.fa-earlybirds {
+.fa-github {
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     text-decoration: none;
-    color: rgb(176, 38, 116);
+    color: #843aff;
+    padding: 6px;
 }
 
 
@@ -282,50 +294,40 @@
 
     .body,
     .project-body {
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
     .navbar {
         align-items: center;
         align-self: center;
         justify-content: center;
-        height: 60px;
+        height: 70px;
     }
 
-    .navbar-items {
+    .navbar a {
+        font-size: 30px;
         padding: 15px 30px;
     }
 
-    .navbar-items a {
-        font-size: 1.4em;
-        padding: 20px;
+    .main-content-home {
+        align-items: flex-start;
+        padding: 20px 50px;
     }
 
-    .main-content {
-        padding: 20px;
-        align-items: center;
+    #name {
+        font-size: 40px;
     }
 
-    #profilepic {
-        height: 250px;
-        width: 250px;
-    }
-
-    h1 {
-        font-size: 1.6em;
-        margin-top: 10px;
+    #job {
+        font-size: 25px;
     }
 
     .fa-linkedin,
     .fa-github {
-        width: 40px;
-        height: 40px;
-        padding: 6px;
-        margin: 10px;
+        width: 37px;
+        height: 37px;
+        padding: 4px;
     }
     
     .intro-content-rectangle,
@@ -459,50 +461,40 @@
 
     .body,
     .project-body {
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
     .navbar {
         align-items: center;
         align-self: center;
         justify-content: center;
-        height: 60px;
+        height: 70px;
     }
 
-    .navbar-items {
+    .navbar a {
+        font-size: 30px;
         padding: 15px 30px;
     }
 
-    .navbar-items a {
-        font-size: 1.4em;
-        padding: 20px;
+    .main-content-home {
+        align-items: flex-start;
+        padding: 20px 50px;
     }
 
-    .main-content {
-        padding: 20px;
-        align-items: center;
+    #name {
+        font-size: 50px;
     }
 
-    #profilepic {
-        height: 250px;
-        width: 250px;
-    }
-
-    h1 {
-        font-size: 1.6em;
-        margin-top: 10px;
+    #job {
+        font-size: 30px;
     }
 
     .fa-linkedin,
     .fa-github {
-        width: 40px;
-        height: 40px;
-        padding: 6px;
-        margin: 10px;
+        width: 37px;
+        height: 37px;
+        padding: 4px;
     }
     
     .intro-content-rectangle,
@@ -636,50 +628,40 @@
 
     .body,
     .project-body {
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
         width: 100%;
         height: 100%;
     }
 
     .navbar {
-        align-items: flex-start;
-        align-self: flex-start;
-        justify-content: flex-start;
-        height: 60px;
+        align-items: flex-end;
+        align-self: flex-end;
+        justify-content: flex-end;
+        height: 80px;
     }
 
-    .navbar-items {
+    .navbar a {
+        font-size: 30px;
         padding: 15px 30px;
     }
 
-    .navbar-items a {
-        font-size: 1.4em;
-        padding: 20px;
+    .main-content-home {
+        align-items: flex-start;
+        padding: 20px 80px;
     }
 
-    .main-content {
-        padding: 20px;
-        align-items: center;
+    #name {
+        font-size: 60px;
     }
 
-    #profilepic {
-        height: 250px;
-        width: 250px;
-    }
-
-    h1 {
-        font-size: 1.8em;
-        margin-top: 10px;
+    #job {
+        font-size: 30px;
     }
 
     .fa-linkedin,
     .fa-github {
-        width: 40px;
-        height: 40px;
-        padding: 6px;
-        margin: 10px;
+        width: 37px;
+        height: 37px;
+        padding: 4px;
     }
     
     .intro-content-rectangle,
@@ -838,30 +820,23 @@
 
     .body,
     .project-body {
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
         width: 100%;
         height: 100%;
     }
 
     .navbar {
-        align-items: flex-start;
-        align-self: flex-start;
-        justify-content: flex-start;
-        height: 60px;
+        align-items: flex-end;
+        align-self: flex-end;
+        justify-content: flex-end;
+        height: 80px;
     }
 
-    .navbar-items {
+    .navbar a {
+        font-size: 30px;
         padding: 15px 30px;
     }
 
-    .navbar-items a {
-        font-size: 1.5em;
-        padding: 20px;
-    }
-
-    .main-content {
+    .main-content-home {
         padding: 20px;
         align-items: center;
     }
@@ -871,17 +846,23 @@
         width: 270px;
     }
 
-    h1 {
-        font-size: 2em;
-        margin-top: 10px;
+    .main-content-home {
+        align-items: flex-start;
+        padding: 20px 100px;
+    }
+
+    #name {
+        font-size: 65px;
+    }
+
+    #job {
+        font-size: 35px;
     }
 
     .fa-linkedin,
     .fa-github {
         width: 40px;
         height: 40px;
-        padding: 6px;
-        margin: 10px;
     }
 
     .intro-content-rectangle,
@@ -1037,50 +1018,38 @@
 
     .body,
     .project-body {
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
         width: 100%;
         height: 100%;
     }
 
     .navbar {
-        align-items: flex-start;
-        align-self: flex-start;
-        justify-content: flex-start;
-        height: 60px;
+        align-items: flex-end;
+        align-self: flex-end;
+        justify-content: flex-end;
     }
 
-    .navbar-items {
+    .navbar a {
+        font-size: 30px;
         padding: 15px 30px;
     }
 
-    .navbar-items a {
-        font-size: 1.5em;
-        padding: 20px;
+    .main-content-home {
+        align-items: flex-start;
+        padding: 20px 100px;
     }
 
-    .main-content {
-        padding: 20px;
-        align-items: center;
+    #name {
+        font-size: 65px;
     }
 
-    #profilepic {
-        height: 300px;
-        width: 300px;
-    }
-
-    h1 {
-        font-size: 2em;
-        margin-top: 10px;
+    #job {
+        font-size: 35px;
     }
 
     .fa-linkedin,
     .fa-github {
         width: 40px;
         height: 40px;
-        padding: 6px;
-        margin: 10px;
     }
 
     .intro-content-rectangle,
