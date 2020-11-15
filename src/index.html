@@ -9,22 +9,30 @@
 </head>
 <body class="body">
 
-    <nav class="navbar">
-        <ul class="navbar-items">
-            <li><a title="About Me" href="aboutme.html">About Me</a></li>
-            <li><a title="Projects" href="mainprojectspage.html">Projects</a></li>
-        </ul>
-    </nav>
+    <div id="vanta-background">
 
-    <div class="main-content">
-        <img id="profilepic" src="images/ProfilePic.jpg" alt="Profile Picture">
-        <h1 class="details">Katie Crowhurst</h1>
-        <h1 class="details">Junior Developer</h1>
-        <div class="icons">
-            <a title="LinkedIn" href="#" class="fa fa-linkedin fa-2x"></a>
-            <a title="GitHub" href="https://github.com/KatieCrowhurst" class="fa fa-github fa-2x"></a>
+        <nav class="navbar">
+            <a class="home active" href="#"><i class="fa fa-fw fa-home"></i></a> 
+            <a href="aboutme.html"><i class="fa fa-fw fa-user"></i></a>
+            <a href="mainprojectspage.html"><i class="fa fa-folder-open"></i></a>
+        </nav>
+
+        <div class="main-content-home">
+            <div class="details">
+                <h1 id="name">Katie Crowhurst</h1>
+                <h1 id="job">Junior Developer</h1>
+            </div>
+            <div class="social-media-icons">
+                <a title="LinkedIn" href="#" class="fa fa-linkedin fa-2x"></a>
+                <a title="GitHub" href="https://github.com/KatieCrowhurst" class="fa fa-github fa-2x"></a>
+            </div>
         </div>
+
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
